@@ -53,10 +53,10 @@ jobs:
             bin/expotools check-packages --all
           elif [[ "${{ github.event_name }}" == "push" ]]; then
             # On push event check packages changed since previous remote head
-            bin/expotools check-packages --since ${{ github.event.before || 'master' }}
+            bin/expotools check-packages --since ${{ github.event.before || 'refs/remotes/origin/master' }}
           else
             # In pull requests check all packages changed in the entire PR
-            bin/expotools check-packages --since ${{ github.base_ref || 'master' }}
+            bin/expotools check-packages --since ${{ github.base_ref || 'refs/remotes/origin/master' }}
           fi
       - uses: 8398a7/action-slack@v3
         if: failure() && (github.event.ref == 'refs/heads/master' || startsWith(github.event.ref, 'refs/heads/sdk-'))
