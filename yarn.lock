@@ -2484,16 +2484,9 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@react-native-community/async-storage@https://github.com/sjchmiela/async-storage/archive/patch-1.tar.gz":
+"@react-native-community/async-storage@react-native-community/async-storage#ae2c675":
   version "1.11.0"
-  resolved "https://github.com/sjchmiela/async-storage/archive/patch-1.tar.gz#7ae58b5bb9d0af5e27393f67da5f19b960935b56"
-  dependencies:
-    deep-assign "^3.0.0"
-
-"@react-native-community/async-storage@~1.11.0":
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/@react-native-community/async-storage/-/async-storage-1.11.0.tgz#bf81b8813080846f150c67f531987c429b442166"
-  integrity sha512-Pq9LlmvtCEKAGdkyrgTcRxNh2fnHFykEj2qnRYijOl1pDIl2MkD5IxaXu5eOL0wgOtAl4U//ff4z40Td6XR5rw==
+  resolved "https://codeload.github.com/react-native-community/async-storage/tar.gz/ae2c6759459076fcea0aea96f0a7b067e157b19f"
   dependencies:
     deep-assign "^3.0.0"
 
